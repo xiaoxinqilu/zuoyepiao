@@ -7,32 +7,15 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
+    runs-on:  steps:
       - uses: actions/checkout@v4
+      
       - name: Build with Buildozer Docker
         run: |
-          docker run --rm -v ${{ github.workspace }}:/home/user/wivylrlatet ibg
-    ap       uses:nlrct@v4
- t  me: Zuo  p bin*.
-
-mkdir -p .github/workflows
-cat > .github/workflows/build.yml << 'EOF'
-name: Build APK
-
-on:
-  push:
-    branches: [ "main" ]
-  workflow_dispatch:
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/c      run: |
           docker run --rm -v ${{ github.workspace }}:/home/user/hostcwd kivy/buildozer:latest android debug
+          
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: Zhuyepiao-APK
-          path: bin/*.apk
+         Zhuye
+         path: bin/*.apk
